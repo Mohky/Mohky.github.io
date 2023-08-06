@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/codificacion.png" type="image/x-icon">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Basicos%2FMo.png?alt=media&token=544a7981-704c-483a-9059-aa8989368c0d" alt="Logo portafolio" width="50" height="50">
+
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li class="li_animation" onclick="scrollToSection('about')">Sobre mí</li>
+                    <li class="li_animation" onclick="scrollToSection('services')">Skills</li>                    
+                    <li class="li_animation" onclick="scrollToSection('certificaciones')">Cursos y certificaciones</li>                    
+                    <li class="li_animation" onclick="scrollToSection('portfolio')">Mis proyectos</li>
+                    <li class="li_animation" onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--HOME PAGE -->
+    <div class="mi-rectangulo"> 
+    <div class="container">
+        <section id="home" class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola! <br> Mi nombre es</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Jocelyn Reyes Covarrubias</h1>
+                <p class="text-gray-500">
+                    Diseñadora Industrial
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="assets/CV_JocelynReyes.pdf"
+                    aria-label="Descargar curriculum"
+                    class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis proyectos"
+                    class="cursor-pointer border-round-lg">Mis proyectos</button>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Basicos%2FLogoMohky.png?alt=media&token=017ab9b2-fdfe-4532-8755-7ec9ab66dd35" alt="Foto perfil" width="100" height="100">
+            </div>
+        </section><br><br>
+
+
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <br>
+
+                    <p id="textAbout" class="focus\:text-bluegray-500">Me considero autodidacta, comprometida, 
+                        observadora, detallista, seria y responsable. Me gusta el dibujo 2D y 3D, así como aprender sobre las nuevas tecnologías relacionadas al diseño.<br>
+                        Mi meta es establecer una marca propia en el mercado para aplicar mis habilidades y conocimientos. <br>
+                        En mis tiempos libres práctico fotografía.
+                        </p>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-7">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Basicos%2Fperfil.png?alt=media&token=bd717c76-bb78-4a0a-8460-eb7964c15307" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+       <!--Skills -->
+       <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-2 text-center">
+                <h1 class="text-3xl md:text-5xl">Skills</h1>
+            </div>
+            <div class="grid">
+                <div class="col-4">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FAutocad%2050.png?alt=media&token=5c8e8440-566f-45e6-8f3a-b2576475d254">
+                     </div>
+                     <div class="service__name">
+                         <p>Autodesk Autocad</p>
+                     </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FSolid%2050.png?alt=media&token=b13106a0-5f0e-4a5d-b1ee-62aeeaaafc11">     
+                    </div>
+                    <div class="service__name">
+                        <p>Solidworks</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FInventor%2050.png?alt=media&token=1e99bf06-4ff2-4b7c-90ae-3b5c0b04fec9">
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk Inventor</p>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FRhino%2050.png?alt=media&token=d78ffdd0-a7bd-45a4-ab61-a20b6ed542bf">
+                    </div>
+                    <div class="service__name">
+                        <p>Rhinoceros</p>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FKeyshot%2050.png?alt=media&token=4d44dea7-ab33-43cc-b62c-6db8ed180b7c">
+                    </div>
+                    <div class="service__name">
+                        <p>Keyshot</p>
+                    </div>
+                </div>
+
+                <div class="col-4 card flex align-items-center">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FPs%2050.png?alt=media&token=c9a46e69-d95c-4cc1-8acd-ab9ce38b18e3">
+                    </div>
+                    <div class="service__name">
+                        <p>Photoshop</p>
+                    </div>
+                </div>
+
+                <div class="col-4 card flex align-items-center">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FIllustrator%2050.png?alt=media&token=c08337a6-93ab-4d14-a5c6-13e03919a30e">
+                    </div>
+                    <div class="service__name">
+                        <p>Illustrator</p>
+                    </div>
+                </div>
+
+                <div class="col-4 card flex align-items-center">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>SketchUp</p>
+                    </div>
+                </div>
+
+                <div class="col-6 card flex align-items-center">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk Maya</p>
+                    </div>
+                </div>
+
+                <div class="col-6 card flex align-items-center">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk 3Ds Max</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--<div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FAutocad%2050.png?alt=media&token=5c8e8440-566f-45e6-8f3a-b2576475d254">
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk Autocad</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FSolid%2050.png?alt=media&token=b13106a0-5f0e-4a5d-b1ee-62aeeaaafc11">     
+                    </div>
+                    <div class="service__name">
+                        <p>Solidworks</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FInventor%2050.png?alt=media&token=1e99bf06-4ff2-4b7c-90ae-3b5c0b04fec9">
+                        
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk Inventor</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FRhino%2050.png?alt=media&token=d78ffdd0-a7bd-45a4-ab61-a20b6ed542bf">
+                        
+                    </div>
+                    <div class="service__name">
+                        <p>Rhinoceros</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FKeyshot%2050.png?alt=media&token=4d44dea7-ab33-43cc-b62c-6db8ed180b7c">
+                        
+                    </div>
+                    <div class="service__name">
+                        <p>Keyshot</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FPs%2050.png?alt=media&token=c9a46e69-d95c-4cc1-8acd-ab9ce38b18e3">
+                        
+                    </div>
+                    <div class="service__name">
+                        <p>Photoshop</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Iconos%2FIllustrator%2050.png?alt=media&token=c08337a6-93ab-4d14-a5c6-13e03919a30e">
+                        
+                    </div>
+                    <div class="service__name">
+                        <p>Illustrator</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>SketchUp</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk Maya</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Autodesk 3Ds Max</p>
+                    </div>
+                </div>
+              
+            </div> -->
+        </section>
+   
+        <!--Mis proyectos -->
+        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis proyectos</h1>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-6">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item " data-filter="vinos">Stands</li>
+                        <li class="filter-item " data-filter="encriptador">Material POP</li>
+                        <li class="filter-item " data-filter="barberia">Interiores</li>
+                        <li class="filter-item " data-filter="cafe">Joyeria</li>
+                        <li class="filter-item " data-filter="e__commerce">Ceramica</li>
+                        <li class="filter-item " data-filter="react">Academico</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM1.png?alt=media&token=02bfc632-93ee-4f39-a339-9dd865e4e12f" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM2.png?alt=media&token=1de36cf7-c76f-4acf-80c3-5d3e78252ad4" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM3.png?alt=media&token=845c61bf-fe77-44cc-a8ab-f3fca4ff388d" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM4.png?alt=media&token=051549e0-f477-47ab-a917-bb92150321a7" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM5.png?alt=media&token=2c9fd7ef-efbf-4a9d-bf3b-8f770d0d9036" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM6.png?alt=media&token=df332eb7-e94c-496d-9fc0-1198b5b1998c" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCF1.png?alt=media&token=65c60df9-6557-4c76-a8ef-553843391e0e" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCF2.png?alt=media&token=940afc70-9796-46fe-aa50-2060a7131fc0" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCF3.png?alt=media&token=c7ac85d5-79b4-4650-9fef-807c42b030a7" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCF4.png?alt=media&token=70353c09-3a9c-4634-a6a6-d4ba4d587176" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FD1.png?alt=media&token=d695ae7d-c251-47fc-80a2-df556e3ad0df" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FD2.png?alt=media&token=d24a6b40-34c2-4394-bf59-d583090f3b8b" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FD3.png?alt=media&token=4dfaa58e-a7c0-4e8b-9944-fa3f79c2b5b0" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF1.png?alt=media&token=c8e8bc70-ecc7-4275-ba77-3d7942d38e13" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF2.png?alt=media&token=d0b25eef-5592-447a-bb55-856c52d9b060" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF3.png?alt=media&token=e5ee00e7-bc08-4cbf-9e67-52665721d954" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF4.png?alt=media&token=d37467ef-e33f-4716-a370-e7872cece86e" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF5.png?alt=media&token=6226fe53-8f63-491a-b4ef-5dace028574e" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FF6.png?alt=media&token=ea831673-6534-49f3-8e1a-25b4b8430bf4" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card encriptador"> 
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/POP%2FCM6.png?alt=media&token=df332eb7-e94c-496d-9fc0-1198b5b1998c" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>E-commerce</h2>
+                            <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
+                            </p>
+                             <a href="https://proyectoweb2juliana.netlify.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto7.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>E-commerce</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://julianairungaray.github.io/Challenge-ECommerce/pagina.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card vinos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Stands%2FBGF%2FBGF26.png?alt=media&token=37af6a23-d724-4842-8122-5924fc1d075c" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Página de vinos</h2>
+                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card vinos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Stands%2FBGF%2FBGF25.png?alt=media&token=f75c6cc3-5d20-457f-b764-8ae76ffa057f" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Página de vinos</h2>
+                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card vinos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Stands%2FBGF%2FBGF24.png?alt=media&token=60ef0c51-6b1c-46bc-86d1-63f4c890448f" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Página de vinos</h2>
+                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card vinos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Stands%2FBGF%2FBGF21.png?alt=media&token=f2c05547-9e31-42e7-999e-a854dc53d1f1" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Página de vinos</h2>
+                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card vinos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Stands%2FBGF%2FBGF27.png?alt=media&token=14247cf6-cd4c-44b3-80d6-f92281d1191b" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Página de vinos</h2>
+                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="project__card cafe">
+                        <img src="./assets/proyecto-cafe.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Blog de café</h2>
+                            <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
+                            </p>
+                             <a href="https://julianairungaray.github.io/Proyecto3-Udemy/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card barberia">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Barbería</h2>
+                            <p>Curso de Desarrollo Web con HTML5 y CSS3. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://julianairungaray.github.io/Barberia-Alura/index.html "><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card portafolio">
+                        <img src="./assets/portafolio.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Portafolio</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://julianairungaray.github.io/Portafolio/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Tic%2FLogoReloj.webp?alt=media&token=4c0363f6-61bc-4d77-9ca2-2c0d01875f96" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Organizador</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3, JavaScript y React. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://react-js-gold-three.vercel.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Ottanio%2FLogoOttanio.webp?alt=media&token=393a7564-c1e7-465c-9ce4-55921f75abf3" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Watchdog%2FLogoWatchdog.webp?alt=media&token=e506a32e-d4cd-4af9-98df-b50c39068c86" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div> 
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Rumal%2FLogrumal.webp?alt=media&token=79a9fee3-6f5b-434a-90b3-2452fa50b275" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Florian%2FLogoFlorian.webp?alt=media&token=fcd677fc-1b18-4f75-960e-feda7b464d2e" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Ram%C3%A9%2FLogoRame.webp?alt=media&token=6e3e92ad-e617-406d-b684-657392cfb564" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-40ba8.appspot.com/o/Inlab%2FLogoInlab.webp?alt=media&token=8ce8508a-f6cc-48be-8daf-30fb37913d52" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Encriptador</h2>
+                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
+                            </p>
+                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                       
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center justify-content-between">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <!-- <h3 class="Redes_h3">Redes sociales</h3> -->
+                <div class="social__mediaIcons mt-6 flex lg:justify-content-center gap-8 ">
+                    <a href="https://github.com/JulianaIrungaray" target="_blank" aria-label="Ir a github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jukiirungaray/" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juliana-irungaray/" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>jrcdi.mo@gmail.com</p>
+                </div>
+                <a href="mailTo:jrcdi.mo@gmail.com"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Contáctame
+                </a>
+            </div>
+            
+        </footer>
+        <h2 class="titulo-final">&copy; Juliana Irungaray | Todos los derechos reservados</h2><br>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
